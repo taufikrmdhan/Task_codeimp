@@ -1,7 +1,12 @@
 function reserve(kalimat){
-    return kalimat.split(" ").reverse().join(" ");
+    let result = kalimat.split(" ");
+    if (result.length > 1) {
+        return kalimat.split(" ").reverse().join(" ")
+    } else {
+        return ("Masukkan kalimat");
+    }
 }
-console.log(reserve("hello world"));
+console.log(reserve("Saya belajar Javascript"));
 
 
 
