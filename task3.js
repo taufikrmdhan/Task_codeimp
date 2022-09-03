@@ -15,12 +15,12 @@ function PijarFood(harga, voucher, jarak, pajak){
         }
     }
 
-    let biayaAntar = 5000;
+    let ongkir = 5000;
     if(jarak == 1 && jarak == 2){
-        biayaAntar *= jarak;
+        ongkir *= jarak;
     } else{
         for(let i = 3; i <= jarak; i++){
-            biayaAntar = biayaAntar + 3000;
+            ongkir = ongkir + 3000;
         }
     }
 
@@ -31,9 +31,9 @@ function PijarFood(harga, voucher, jarak, pajak){
     }
     console.log(`Total Harga = ${harga}`);
     console.log(`Potongan    = ${diskon}`);
-    console.log(`Biaya Antar = ${biayaAntar}`);
+    console.log(`Biaya Antar = ${ongkir}`);
     console.log(`Pajak       = ${pajak}`);
-    console.log(`SubTotal    = ${harga - diskon + biayaAntar + pajak}`);
+    console.log(`SubTotal    = ${harga - diskon + ongkir + pajak}`);
     return;
 }
 PijarFood(75000, "PIJARFOOD5", 5, true);
