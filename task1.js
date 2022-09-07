@@ -8,4 +8,4 @@ function checkPalindrome(kata) {
   return "Palindrome";
 }
 
-console.log(checkPalindrome("mala"));
+console.log(checkPalindrome("malam"));

@@ -33,4 +33,4 @@ function PijarFood(harga, voucher, jarak, pajak){
     console.log(`SubTotal    = ${harga - diskon + biaya + pajak}`);
     return;
 }
-PijarFood(150000, "PIJARFOOD5", 5, true);
+PijarFood(75000, "PIJARFOOD5", 5, true);
